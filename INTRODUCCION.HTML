@@ -106,16 +106,16 @@
     <form method="post">
         <!-- nombre   -->
         <label for="">NOMBRE </label>
-        <input type="text" placeholder="Nombre"  required name="NOMBRE" id="Nom"> <br>
+        <input type="text" placeholder="Nombre"  required name="NOMBRE" id="Nombre"> <br>
         <!-- fecha  -->
         <label for=""> FECHA</label>
-        <input type="date" placeholder="Fecha" required name="FECHA" id="Date"><br>
+        <input type="date" placeholder="Fecha" required name="FECHA" id="Fecha"><br>
         <!-- numero  -->
         <label for="">SALARIO_MENSUAL </label>
-        <input type="number" placeholder="Salario Mensual" required name="SALARIO_MENSUAL" id="Money"> <br>
+        <input type="number" placeholder="Salario Mensual" required name="SALARIO_MENSUAL" id="Salario"> <br>
         <!-- correo  -->
         <label for="">CORREO </label>
-        <input type="email" placeholder="Ingrese su correo electronico" required name="CORREO" id="Email"> <br>
+        <input type="email" placeholder="Ingrese su correo electronico" required name="CORREO" id="Correo"> <br>
         <!-- Cargar un archivo  -->
         <label for=""> CARGUE SU HOJA DE VIDA </label>
         <input type="file" placeholder=" Cargue aquí su Hoja de Vida" required name="CV" id="CV"> <br>
@@ -124,40 +124,40 @@
         <input type="password" placeholder="Ingrese aqui su contraseña" required name="CONTRASEÑA" id="Password"> <br>
         <!-- Hora de ingreso  -->
         <label for="">HORA DE INGRESO</label>
-        <input type="time" placeholder="Cual fue su hora de ingreso" required name="HORA_DE_INGRESO" id="income"><br>
+        <input type="time" placeholder="Cual fue su hora de ingreso" required name="HORA_DE_INGRESO" id="ingreso"><br>
         <!-- Mes de ingreso  -->
         <label for=""> MES DE INGRESO </label>
-        <input type="month" placeholder=" Indique su mes de ingreso" required name="MES_DE_INGRESO" id="month"> <br>
+        <input type="month" placeholder=" Indique su mes de ingreso" required name="MES_DE_INGRESO" id="Mes"> <br>
         <!-- ingresar color  -->
         <label for="">COLOR</label>
-        <input type="color" placeholder="Seleccione su color favorito" required name="COLOR" id="Color"> <br>
+        <input type="color" placeholder="Seleccione su color favorito"  > <br>
         <!-- selección de campos  -->
         <label for="">GENERO</label>
-        <input type="radio" name="GENERO" value="FEMENINO" required  id="Genero">
+        <input type="radio" name="GENERO" value="FEMENINO"  >
         <label for="">FEMENINO </label>
-        <input type="radio" name="GENERO" value="MASCULINO" required id="M">
+        <input type="radio" name="GENERO" value="MASCULINO" >
         <label for=""> MASCULINO </label> <br>
         <!-- campo checkbox  -->
         <label for="">DIAS LABORADOS</label>
-        <input type="checkbox" name="DIAS_LABORADOS" value="LUNES" id="Lunes">
+        <input type="checkbox" name="DIAS_LABORADOS" value="LUNES" >
         <label for=""> LUNES </label>
-        <input type="checkbox" name="DIAS_LABORADOS" value="MARTES" id="Martes" >
+        <input type="checkbox" name="DIAS_LABORADOS" value="MARTES" >
         <label for=""> MARTES </label>
-        <input type="checkbox" name="DIAS_LABORADOS" value="MIERCOLES" id="Miercoles">
+        <input type="checkbox" name="DIAS_LABORADOS" value="MIERCOLES" >
         <label for=""> MIERCOLES </label>
-        <input type="checkbox" name="DIAS_LABORADOS" value="JUEVES" id="Jueves">
+        <input type="checkbox" name="DIAS_LABORADOS" value="JUEVES" >
         <label for=""> JUEVES </label>
-        <input type="checkbox" name="DIAS_LABORADOS" value="VIERNES" id="Viernes">
+        <input type="checkbox" name="DIAS_LABORADOS" value="VIERNES" >
         <label for=""> VIERNES </label> <br>
         <!-- campo para url  -->
         <label for=""> LINK PERFIL DE LINKEDIN </label>
-        <input type="url" required name=" LINKEDIN" id="Link"> <br>
+        <input type="url"  name=" LINKEDIN" > <br>
         <!-- numero de telefono  -->
         <label for=""> TELEFONO </label>
-        <input type="tel" required  name="TELEFONO" id="Cell"> <br>
+        <input type="tel"  name="TELEFONO" > <br>
         <!-- selector  -->
         <label for=""> ESCOJA UNA CIUDAD </label>
-        <select name="CIUDAD" id="Ciudad" required>
+        <select name="CIUDAD">
             <option value="Choco">Choco</option>
             <option value="Boyacá" >Boyacá</option>
             <option value="Manizales">Manizales</option>
@@ -165,7 +165,7 @@
             <option value="Bogotá">Bogotá</option>
         </select><br>
         <!-- fieldset  -->
-        <fieldset id="CuadroDeInformacion">
+        <fieldset>
             <legend>INFORMACIÓN GENERAL</legend>
         <!-- Text Area  -->
             <label for=""> DESCRIPCIÓN DEL PERFIL</label>
@@ -185,7 +185,7 @@
             <br>
         <!-- Button  -->
     <div> 
-        <button class="ENVIAR_INFO" onclick="enviarFormulario()"> ENVIAR </button>
+        <button type="button" class="ENVIAR_INFO" onclick="enviarFormulario()"> ENVIAR </button>
     </div>    
     
 </body>
@@ -212,29 +212,17 @@
 
     function enviarFormulario(){
         var Nombre =document.getElementById("Nom").value
-        var Fecha = document.getElementById("Date").value
-        var Salario = document.getElementById("Money").value
-        var Correo = document.getElementById("Email").value
+        var Fecha = document.getElementById("Fecha").value
+        var Salario = document.getElementById("Salario").value
+        var Correo = document.getElementById("Correo").value
         var CV = document.getElementById("CV").value
         var Password = document.getElementById("Password").value
-        var Income = document.getElementById("income").value
-        var Mes = document.getElementById("Month").value
-        var Color = document.getElementById("Color").value
-        var Genero = document.getElementById("Genero").value
-        var Masculino = document.getElementById("M").value
-        var Lunes = document.getElementById("Lunes").value
-        var Martes = document.getElementById("Martes").value
-        var Miercoles = document.getElementById("Miercoles").value
-        var Jueves = document.getElementById("Jueves").value
-        var Viernes = document.getElementById("Viernes").value
-        var Link = document.getElementById("Link").value
-        var Cell = document.getElementById("Cell").value
-        var Ciudad = document.getElementById("Ciudad").value
-        var CuadroDeInformacion = document.getElementById("CuadroDeInformacion").value
+        var Ingreso = document.getElementById("ingreso").value
+        var Mes = document.getElementById("Mes").value
+       
     
-        if(Nombre && Fecha && Salario && Correo && CV && Password && Income && Mes && Color && Genero && Masculino && Lunes && Martes &&
-            Miercoles && Jueves && Viernes && Link &&  Cell && Ciudad && CuadroDeInformacion)
-            alert("Los datos del formulario son:"+Nom+" "+Date+" "+Money+" "+Email+" "+CV+" "+Password+" "+Income+" "+ Month+" "+ Color+" "+Genero+" "+ Masculino+" "+Lunes+" "+Martes+" "+ Miercoles+" "+Jueves+" "+ Viernes+" "+Link+" "+Cell+" "+Ciudad+" "+ CuadroDeInformacion)
+        if(Nombre && Fecha)
+            alert("Los datos del formulario son: " + Nombre + " " + Fecha + " " +Salario+ " " +Correo+ " " +CV+ " " +Password+ " " +Ingreso+ " " + Mes)
         }
 </script>
 
