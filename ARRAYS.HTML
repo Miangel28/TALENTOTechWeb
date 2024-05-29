@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+        // var estudiantes = ["Juan","Pula","Jimena"]    
+        // var notas = [4.5,3.5,2.0]
+        // var frutas= [ "Manzanas", "Pera", "Banano"]
+        // document.write(estudiantes)
+        // document.write("<br>")
+        // //Popiedad length , cuantos datos tiene 
+        // document.write("Cuanto es la longitud del array?: " + estudiantes.length)
+
+    // var clientes = ["Jaime", " Luis" , " Toño"]
+    // clientes.push("Sofia") // añadir un dato al arrays
+    // document.write(clientes)
+    // document.write("<br>")
+    // //Eliminar elementos 
+
+    // clientes.pop() //Elimina ultimo elemento agregado
+    // //       (Indice , cantidad)
+    // clientes.splice(0,2)
+    // document.write(clientes)
+
+    //Ordenar arrays
+
+    // clientes.sort() // Orden alfabetico
+    // clientes.reverse() // Ordenar al reves
+    // document.write(clientes)
+
+    /**Implementar 4 arrays
+     * Uno de paises
+     * Uno de ciudades
+     * Uno de departamentos
+     * uno de universidades
+     * Mostrar la longitud de cada uno */
+
+    //  var Pais=["Colombia", "Ecuador", "Venezuela" , "Bolivia"]
+    //     document.write("Los paises seleccionados son: " + Pais + " Y su longitud es :" +Pais.length + "<br>")
+    //  var Ciudades = [ "Bogotá", "Quito", "Caracas" , "La paz"]
+    //     document.write("Las ciudades seleccionadas son : " + Ciudades + " Y su longitud es :" +Ciudades.length + "<br>")
+    //  var Departamentos = [ "Cundinamarca", " Boyaca", "Meta" , "Nariño" ]
+    //     document.write("Los Departamentos seleccionados son: " + Departamentos + " Y su longitud es :" +Departamentos.length + "<br>")
+    //  var Universidades = [ "Arean Andina" , "Universidad Nacional de Colombia" , " Javeriana" , "Sergio Arboleda" ]
+    //     document.write("Las universidades seleccionadas son: " + Universidades + " Y su longitud es :" +Universidades.length + "<br>")
+
+    /** Crear el array con 5 notas y obtener el promedio */
+//   var notas = [ 2, 3.5 , 4.5 , 5 , 4 ]
+//   var acomulado=0
+//   for(var i=0; i<notas.length; i++ ){
+//             acomulado= acomulado+notas[i]
+//   }
+//   var promedio = acomulado / notas.length
+//   document.write("El promedio es :" + promedio)
+
+/**
+ * Implementar un algorimo que me permita ingresar 5 personas, agregarlas a un array
+ * de invitados e imprimir sus nombres y la cantidad total
+*/
+// var nombre
+// var cantidadInvitados = parseInt(prompt("Ingrese la cantidad de personas a invitar: "))
+// var invitados = []
+// for(var i=0; i<cantidadInvitados; i++){ // Se hace 5 veces
+//     nombre = prompt("Ingrese el nombre del invitado: ")
+//     invitados.push(nombre)
+// }
+// document.write("Los invitados son: " + invitados + "<br>")
+// document.write("La cantidad de invitados es: " + invitados.length)
+
+/**
+ * Hacer un algortimo que almacene en una matriz, las notas por periodo
+ * y la recorra, saque los promedios por periodo y la nota final
+*/
+// var matriz = [
+//     [4.1, 2, 3, 5], // Primer periodo
+//     [2.8, 1, 3.1, 2.9], // Segundo periodo
+//     [2.4, 1.3, 4.2, 0.5], // Tercer periodo
+//     [4.7, 5, 3.6, 2.3] // Cuarto periodo
+//     ]
+
+// var notaPeriodo = 0
+// var acumulado = 0
+
+//     for(var i=0; i<matriz.length; i++){
+//         document.write(matriz[i] + "<br>")
+
+//         for(var j=0; j<matriz[i].length; j++){
+//             notaPeriodo = notaPeriodo+matriz[i][j] // Acumulamos las notas periodo
+//         }
+//         notaPeriodo=notaPeriodo/matriz[i].length // Sacamos promedio periodo
+//         document.write("La nota del perdio " + i + " es " + notaPeriodo + "<br>")
+//         acumulado=acumulado+notaPeriodo // Acumulamos las notas finales
+//         notaPeriodo=0
+//     }
+//     document.write("La nota final es: "+ acumulado/matriz.length) // Sacamos el promedio final
+
+
+     
+/** Algoritmo que inspira los elementos de un array , cada uno en una linea inco */
+
+var equipos = [ "Millonarios", "Santa fe", "Nacional" , "America"]
+for(var i=0 ; i<equipos.length; i++) {
+    document.write(equipos[i] + "<br>")
+}
+    
+
+var ventas = [115, 224, 1500, 800 , 3841 ]
+    var total=0
+for(var i=0; i<ventas.length; i++){
+    total+=ventas[i]    
+}
+document.write("El total de ventas fue : " +total)        
+
+/** Encontrar el valor maximo de un array */
+var notas = [3.1,3.3,4,1.2]
+var notaMaxima=notas[0]
+for(var i=0; i<notas,length; i++){
+    if(notas[i] > notaMaxima){
+        notaMaxima = notas[i]
+    }
+}
+document.write("La nota maxima es:" + notaMaxima)
+
+/** Multiplos de 4 */
+var numeros = [2, 3, 16, 24, 36, 48, 62, 80, 100]
+for(var i=0; i<numeros.length; i++){
+    if(numeros[i]%4 == 0){ // Operador modulo => Residuo
+        document.write("El numero " + numeros[i] + " es multiplo de 4 <br>")
+    }
+}
+
+</script>
+</html>

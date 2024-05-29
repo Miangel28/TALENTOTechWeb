@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+
+<Script>
+    // var nota = parseFloat(prompt("Ingrese la nota"))
+    // if(nota>= 3) {document.write("Aprobado")}
+    // else {document.write("Reprobado")}
+
+
+    // var Temperatura = parseInt(prompt ("Ingrese la temperatura"))
+    // if (Temperatura > 20 ) {document.write("Esta haciendo calor")}
+    // else if (Temperatura >= 18) { document.write ("El clima esta perfecto") }
+    // else{document.write ("Esta haciendo frio") } 
+
+    // var estacion = prompt("Ingrese la estación:")
+    // if (estacion == ("Verano") || estacion == ("Otoño") ) {document.write("Es tiempo de sembrar")}
+    // else {document.write ("No es tiempo de sembrar")}
+
+    // var Numero1 = parseFloat (prompt("Ingrese Numero 1"))
+    // var Numero2 = parseFloat (prompt( "Ingrese Numero 2"))
+    // var Operacion = prompt ("Ingrese la operación a realizar")
+    // var Resultado = 0
+    // if (Operacion== "Suma") { Resultado = Numero1+Numero2}
+    // else if (Operacion == "Resta") { Resultado = Numero1-Numero2}
+    // else if ( Operacion == "Multiplicacion") { Resultado = Numero1*Numero2}
+    // else if ( Operacion == "Division" ) { Resultado = Numero1/Numero2}
+    // else if ( Operacion == "Potenciacion") { Resultado = Numero1**Numero2}
+    // else if ( Operacion == "Residuo") { Resultado = Numero1%Numero2}
+    // else {document.write("La operación no existe")}
+    // document.write(" El resultado de la " + Operacion + " es :" + Resultado)
+
+var NumeroMes= parseInt(prompt("Ingrese el numero del mes:"))
+var NombreMes= ""
+if(NumeroMes > 0 && NumeroMes <=12 ){
+    switch(NumeroMes){
+        case 1: 
+        NombreMes= "Enero"
+        break;
+        case 2: 
+        NombreMes= "Febrero"
+        break;
+        case 3: 
+        NombreMes= "Marzo"
+        break;
+        case 4: 
+        NombreMes= "Abril"
+        break;
+        case 5: 
+        NombreMes= "Mayo"
+        break;
+        case 6: 
+        NombreMes= "Junio"
+        break;
+        case 7: 
+        NombreMes= "Julio"
+        break;
+        case 8: 
+        NombreMes= "Agosto"
+        break;
+        case 9: 
+        NombreMes= "Septiembre"
+        break;
+        case 10: 
+        NombreMes= "Octubre"
+        break;
+        case 11: 
+        NombreMes= "Noviembre"
+        break;
+        case 12: 
+        NombreMes= "Diciembre"
+        break;
+    }
+    document.write("El mes ingresado es:" +NombreMes)
+} else{
+    document.write("El mes ingresado no es valido")
+}
+
+</Script>
+</html>

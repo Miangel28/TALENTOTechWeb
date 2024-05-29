@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id ="Seccion1">
+        Seccion 1
+    </div>
+    <div id ="Seccion2">
+        Seccion 2
+    </div>
+    <form action="">
+         <label for="">Nombre</label>
+         <input type="text" id="nombre" >
+         <label for=""> Descripcion </label>
+         <textarea id="descripcion"></textarea>
+         <button type="button" onclick="saludar()">Enviar</button>  
+         <hr>
+         <label for="">Seccion</label>
+         <select name="" id="seccion_seleccionada">
+            <option value="Seccion1">1</option>
+            <option value="Seccion2">2</option>
+         </select>
+         <label for=""> tamano</label>
+         <select name="" id="size">
+            <option value="Pequeña">P</option>
+            <option value="Mediano">M</option>
+            <option value="Grande">G</option>
+         </select>   
+         <button type="button" onclick="cambiarColor('grey')"> Gris </button>
+         <button type="button" onclick="cambiarColor('blue')"> Azul </button>
+         <button type="button" onclick="cambiarColor('yellow')"> Amarillo </button>
+         <button type="button" onclick="cambiarColor('pink')"> rosado </button>
+    </form>
+</body>
+
+    <script>
+
+        function saludar(){
+            var nombre = document.getElementById("nombre").value
+            var descripcion= document.getElementById("descripcion").value    
+            alert("Hola" + nombre)
+        }
+
+        function cambiarColor(color){
+            var seccionSeleccionada=document.getElementById("seccion_seleccionada").value
+            var tamano = document.getElementById("size").value
+            document.getElementById(seccionSeleccionada).style.width=tamano
+            document.getElementById(seccionSeleccionada).style.height=tamano
+            document.getElementById(seccionSeleccionada).style.backgroundColor=color
+            document.getElementById(seccionSeleccionada).style.color='black'
+        }
+
+
+
+        
+    </script>
+
+
+
+</html>

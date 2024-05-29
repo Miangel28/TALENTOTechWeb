@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="body">
+    <DIV class="selector-tema">
+        <select name="" id="tema" onchange="CambiarTema()">
+            <option value="light">Claro</option>
+            <option value="dark">Oscuro</option>
+            <option value="crazy">Loco</option>
+        </select>
+
+    </DIV>
+
+    <!-- IMAGEN --> <H1>ESTO ES UNA IMAGEN</H1>
+    <DIV> 
+        <img class="TalentoTech" src="https://talentotechbogota.co/images/logo_talento.svg" alt="">
+    </DIV>
+    <!-- IMAGEN --> <H1>MI NOMBRE ES</H1>
+    <DIV> 
+        <H3>MIGUEL ANGEL ARIAS RAMIREZ</H3> 
+    </DIV>
+    <!-- IMAGEN --> <H1>DESCRIPCIÓN</H1>
+    <DIV>
+        <p>Soy un adminstrador de empresas, laboro en la empresa copimedica SAS, es una empresa familiar, estoy interesado 
+            en aprender porgramación ya que me llama la atención el funcionamiento de las cosas 
+        </p>
+    </DIV>
+    <!-- IMAGEN --> <H1>ESTE ES MI PERFIL DE LINKEDIN</H1>
+    <div> 
+<a href="https://www.linkedin.com/in/miguel-arias-ramirez-7214582a0/" target="_blank" >Ir a mi perfil</a>
+    </div>
+    <!-- IMAGEN --> <H1>ESTE ES UN VIDEO</H1>
+<DIV> 
+    <VIDEo src="https://www.w3schools.com/html/mov_bbb.mp4" autoplay muted> </VIDEo>
+</DIV>
+<div>
+     <!-- imagen --> <h1> ESTE ES UN VIDEO DE YOUTUBE</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/B9CX_SBdUGY?si=T_EvonIYo4yhXXkQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+    encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+<DIV>
+    <!-- IMAGEN --> <H1>ESTO ES UN AUDIO</H1>
+    <AUDio controls> 
+        <SOURce src= "https://www.w3schools.com/html/horse.mp3" type="audio/ogg"> 
+        </SOURce>
+    </AUDio>
+</DIV>
+<div> 
+    <!-- imagen   --> <H1>LISTA ORDENADA</H1>
+    <ol>
+<LI>ASTON MARTIN</LI>
+<LI>FERRARI</LI>
+<LI>LAMBORGHINI</LI>
+<LI>MASERATI</LI>
+
+    </ol>
+    
+        <!-- IMAGEN  --> <H1>ESTO ES UNA LISTA DOSORDENADA</H1>
+        <ul>
+            <LI>CHEVROLET</LI>
+            <LI>RENULT</LI>
+            <LI>NISSAN</LI>
+            <LI>MAZDA</LI>
+        </ul>
+    
+    
+        <!-- IMAGEN--> <H1>ESTO ES UNA LISTA DESCRIPTIVA</H1>
+     <DL>
+        <DT> <H3>CUNDINAMARCA</H3></DT>
+        <DD>BOGOTA</DD>
+        <DT><H3>CIUDAD BOLIVAR</H3></DT>
+        <DD>ISAMAEL PERDOMO</DD>
+     </DL>    
+    </div>
+    
+    <div>
+        <h1>DATOS PERSONALES</h1>
+        <table class="ESTILO_TABLA">
+            <tr>
+                <th>NOMBRE</th>
+                <th>CIUDAD</th>
+                <th>CORREO</th>
+            </tr>
+            <tr>
+                <td> SOFIA</td>
+                <td> BOGOTÁ</td>
+                <td> SOFIA@CORREO.COM</td>
+            </tr>
+            <tr>
+                <td> CAMILA </td>
+                <td> PEREIRA </td>
+                <td> CAMI@CORREO.COM</td>
+            </tr>
+            <tr>
+                <td> ALONSO </td>
+                <td> MEDELLIN </td>
+                <td> ALONSO@CORREO.COM</td>
+            </tr>
+        </table>
+    </div>
+    <br> <hr>
+    <form method="post">
+        <!-- nombre   -->
+        <label for="">NOMBRE </label>
+        <input type="text" placeholder="Nombre"  required name="NOMBRE" id="Nom"> <br>
+        <!-- fecha  -->
+        <label for=""> FECHA</label>
+        <input type="date" placeholder="Fecha" required name="FECHA" id="Date"><br>
+        <!-- numero  -->
+        <label for="">SALARIO_MENSUAL </label>
+        <input type="number" placeholder="Salario Mensual" required name="SALARIO_MENSUAL" id="Money"> <br>
+        <!-- correo  -->
+        <label for="">CORREO </label>
+        <input type="email" placeholder="Ingrese su correo electronico" required name="CORREO" id="Email"> <br>
+        <!-- Cargar un archivo  -->
+        <label for=""> CARGUE SU HOJA DE VIDA </label>
+        <input type="file" placeholder=" Cargue aquí su Hoja de Vida" required name="CV" id="CV"> <br>
+        <!-- ingresar password  -->
+        <label for=""> CONTRASEÑA </label>
+        <input type="password" placeholder="Ingrese aqui su contraseña" required name="CONTRASEÑA" id="Password"> <br>
+        <!-- Hora de ingreso  -->
+        <label for="">HORA DE INGRESO</label>
+        <input type="time" placeholder="Cual fue su hora de ingreso" required name="HORA_DE_INGRESO" id="income"><br>
+        <!-- Mes de ingreso  -->
+        <label for=""> MES DE INGRESO </label>
+        <input type="month" placeholder=" Indique su mes de ingreso" required name="MES_DE_INGRESO" id="month"> <br>
+        <!-- ingresar color  -->
+        <label for="">COLOR</label>
+        <input type="color" placeholder="Seleccione su color favorito" required name="COLOR" id="Color"> <br>
+        <!-- selección de campos  -->
+        <label for="">GENERO</label>
+        <input type="radio" name="GENERO" value="FEMENINO" required  id="Genero">
+        <label for="">FEMENINO </label>
+        <input type="radio" name="GENERO" value="MASCULINO" required id="M">
+        <label for=""> MASCULINO </label> <br>
+        <!-- campo checkbox  -->
+        <label for="">DIAS LABORADOS</label>
+        <input type="checkbox" name="DIAS_LABORADOS" value="LUNES" id="Lunes">
+        <label for=""> LUNES </label>
+        <input type="checkbox" name="DIAS_LABORADOS" value="MARTES" id="Martes" >
+        <label for=""> MARTES </label>
+        <input type="checkbox" name="DIAS_LABORADOS" value="MIERCOLES" id="Miercoles">
+        <label for=""> MIERCOLES </label>
+        <input type="checkbox" name="DIAS_LABORADOS" value="JUEVES" id="Jueves">
+        <label for=""> JUEVES </label>
+        <input type="checkbox" name="DIAS_LABORADOS" value="VIERNES" id="Viernes">
+        <label for=""> VIERNES </label> <br>
+        <!-- campo para url  -->
+        <label for=""> LINK PERFIL DE LINKEDIN </label>
+        <input type="url" required name=" LINKEDIN" id="Link"> <br>
+        <!-- numero de telefono  -->
+        <label for=""> TELEFONO </label>
+        <input type="tel" required  name="TELEFONO" id="Cell"> <br>
+        <!-- selector  -->
+        <label for=""> ESCOJA UNA CIUDAD </label>
+        <select name="CIUDAD" id="Ciudad" required>
+            <option value="Choco">Choco</option>
+            <option value="Boyacá" >Boyacá</option>
+            <option value="Manizales">Manizales</option>
+            <option value="Ibague" >Ibagué</option>
+            <option value="Bogotá">Bogotá</option>
+        </select><br>
+        <!-- fieldset  -->
+        <fieldset id="CuadroDeInformacion">
+            <legend>INFORMACIÓN GENERAL</legend>
+        <!-- Text Area  -->
+            <label for=""> DESCRIPCIÓN DEL PERFIL</label>
+            <textarea name=" DESC_PERFIL" id="" cols="58" rows="8"> </textarea>  
+            <br>
+        <!-- Datalist  -->
+            <label for="">TIPO DOCUMENTO</label>
+            <input list="DOCUMENTO">
+            <datalist id="DOCUMENTO">
+                <option value="CEDULA DE CIUDADANIA"></option>
+                <option value="TARJETA DE IDENTIDAD"></option>
+                <option value="CEDULA EXTRANGERIA"></option>
+            </datalist> <br>
+            <label for="">CEDULA</label>
+            <input type="text" name="CEDULA">
+        </fieldset>
+            <br>
+        <!-- Button  -->
+    <div> 
+        <button class="ENVIAR_INFO" onclick="enviarFormulario()"> ENVIAR </button>
+    </div>    
+    
+</body>
+
+<script>
+    function CambiarTema(){
+        var body = document.getElementById("body")
+        var tema = document.getElementById("tema").value
+        var fondo=""
+        var letra=""
+        if(tema == "light"){
+            fondo = "pink"
+            letra = "blue"
+        }else if (tema == "dark"){
+            fondo = "Blue"
+            letra = "white"
+        }else if(tema=="crazy"){
+            fondo = "orange"
+            letra = "red" 
+        } 
+        body.style.backgroundColor=fondo
+        body.style.color=letra  
+    }
+
+    function enviarFormulario(){
+        var Nombre =document.getElementById("Nom").value
+        var Fecha = document.getElementById("Date").value
+        var Salario = document.getElementById("Money").value
+        var Correo = document.getElementById("Email").value
+        var CV = document.getElementById("CV").value
+        var Password = document.getElementById("Password").value
+        var Income = document.getElementById("income").value
+        var Mes = document.getElementById("Month").value
+        var Color = document.getElementById("Color").value
+        var Genero = document.getElementById("Genero").value
+        var Masculino = document.getElementById("M").value
+        var Lunes = document.getElementById("Lunes").value
+        var Martes = document.getElementById("Martes").value
+        var Miercoles = document.getElementById("Miercoles").value
+        var Jueves = document.getElementById("Jueves").value
+        var Viernes = document.getElementById("Viernes").value
+        var Link = document.getElementById("Link").value
+        var Cell = document.getElementById("Cell").value
+        var Ciudad = document.getElementById("Ciudad").value
+        var CuadroDeInformacion = document.getElementById("CuadroDeInformacion").value
+    
+        if(Nombre && Fecha && Salario && Correo && CV && Password && Income && Mes && Color && Genero && Masculino && Lunes && Martes &&
+            Miercoles && Jueves && Viernes && Link &&  Cell && Ciudad && CuadroDeInformacion)
+            alert("Los datos del formulario son:"+Nom+" "+Date+" "+Money+" "+Email+" "+CV+" "+Password+" "+Income+" "+ Month+" "+ Color+" "+Genero+" "+ Masculino+" "+Lunes+" "+Martes+" "+ Miercoles+" "+Jueves+" "+ Viernes+" "+Link+" "+Cell+" "+Ciudad+" "+ CuadroDeInformacion)
+        }
+</script>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+<style>
+    /* REFERENCIA POR ETIQUETA  */
+    h1 {
+        background-color: gray; width: 800px;
+        color: white;
+        border-color: black;
+        border-radius: 50px;
+        font-style: italic;
+        font-family: 'Times New Roman', Times, serif;
+        color: aquamarine;
+        
+        }
+
+    .ENVIAR_INFO{
+        background-color: cyan;
+        border-color: black;
+        color: black;
+        border-radius: 10px;
+           }
+           /* REFERENCIA POR ID  */
+    #DANIELA { 
+        background-color: blue;
+        color: black;
+        border-color: white;
+            }
+    #MIGUEL { 
+        background-color: yellow;
+        color: black;
+        border-color: aqua;
+            }
+        /* REFERENCIA POR CLASE  */
+    .ARIAS { background-color: crimson;
+             color: black;
+            border-color: aqua;
+            width: 60px;
+            right: 20px ;}
+    .TalentoTech{
+        border-radius: 20px;
+        box-shadow: 10px 15px 20px aqua;
+        size: 45px;
+    }  
+    .ESTILO_TABLA tr:nth-child(even){
+       background-color: blue;
+       border-color: aqua;
+       border: 2px solid;
+       text-align: center;
+       border-collapse: collapse;
+    }      
+    th,td{
+        border: 1px solid;
+        border-color: gray;
+    }
+
+    .ESTILO_TABLA tr:hover{
+        background-color: aquamarine;
+        color: black;
+    }
+    ol{
+        border: solid;
+        box-shadow: 5px 10px 8px blue ;
+        list-style-type:upper-roman;
+    }
+
+    ul{
+        border: double;
+        border-color: aqua;
+        border-radius: 30px;
+        box-shadow: 5px 6px 8px blue;
+    }
+
+    form {
+        border: 2px solid;
+        border-color: cyan;
+        border-radius: 20px;
+    }
+    fieldset{
+        color: black; 
+        border: 1px solid;
+        border-color: blue;
+        opacity: 1;
+        font-weight: bold;
+    }
+
+    label {
+        border: dashed;
+        border-radius: 3px;
+        border-color: grey;
+        border-collapse: collapse ; 
+    }
+
+</style>                
+</html>

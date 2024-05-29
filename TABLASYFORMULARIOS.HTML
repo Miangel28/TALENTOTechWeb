@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Nombre</th> 
+            <th>Correo</th> 
+            <th>Ciudad</th> 
+            <th>Edad</th>
+            <th> Profesion </th>
+        </tr>
+        <tr>
+            <td> Miguel Arias </td>
+            <td> miaariasr@gmail.com </td>
+            <td> Bogotá </td>
+            <td> 25 años </td>
+            <td> Ingeniero de sistemas </td>
+        </tr>
+        <tr>
+            <td> Angie Parra</td>
+            <td> Parrasalgadoangiendaniela65@gmail.com</td>
+            <td> Bogotá </td>
+            <td> 21 años </td>
+            <td> Administradora de empresas</td>
+        </tr>
+        <tr>
+            <td> Juliana Gomez </td>
+            <td> Julianagomez56@gmail.com</td>
+            <td> Bogotá </td>
+            <td> 25 años </td>
+            <td> Comerciante </td>
+        </tr>
+        <tr> 
+            <td> Aurora Monrroy</td>
+            <td> auroragomezmonrroy32@gmail.com</td>
+            <td> Bogotá </td>
+            <td> 40 años </td>
+            <td> Decoradora de interiores </td>
+        </tr>
+        <tr>
+            <td> Laura Flores </td>
+            <td> Lauratrianaf35@gmail.com</td>
+            <td> Ibague </td>
+            <td> 32 años </td>
+            <td> Abogada </td>
+        </tr>
+        <tr>
+            <td> Arnulfo ibañez </td>
+            <td> arnulforamirezibañez64@gmail.com</td>
+            <td> Medellín </td>
+            <td> 55 años </td>
+            <td> Comerciante </td>
+        </tr>
+        <tr> 
+            <td> Leo Torres </td>
+            <td> leo62@gmail.com </td>
+            <td> Boyacá </td>
+            <td> 35 años</td>
+            <td> Conductor </td>
+        </tr>
+        <tr>
+            <td> Gonzalo Leal </td>
+            <td> gonzalof45@gamil.com </td>
+            <td> Girardot </td>
+            <td> 67 años </td>
+            <td> Ingeniero Civil </td>
+        </tr>
+        <tr>
+            <td> Henrry Lesmes </td>
+            <td> lesmesH45@gmail.com</td>
+            <td> Villeta </td>
+            <td> 47 años </td>
+            <td> Diseñodor de modas</td>
+        </tr>
+        <tr>
+            <td> Belen Ramirez </td>
+            <td> Belera37@gamil.com </td>
+            <td> Boyacá </td>
+            <td> 65 años </td>
+            <td> Marquetero </td>
+        </tr>
+    </table> <br> <br>
+    <hr>
+    <form method="post">
+        <!-- nombre   -->
+        <label for="">NOMBRE </label>
+        <input type="text" placeholder="Nombre" required name="NOMBRE"> <br>
+        <!-- fecha  -->
+        <label for=""> FECHA</label>
+        <input type="date" placeholder="Fecha" required name="FECHA"><br>
+        <!-- numero  -->
+        <label for="">SALARIO_MENSUAL </label>
+        <input type="number" placeholder="Salario Mensual" required name="SALARIO_MENSUAL"> <br>
+        <!-- correo  -->
+        <label for="">CORREO </label>
+        <input type="email" placeholder="Ingrese su correo electronico" required name="CORREO"> <br>
+        <!-- Cargar un archivo  -->
+        <label for=""> CARGUE SU HOJA DE VIDA </label>
+        <input type="file" placeholder=" Cargue aquí su Hoja de Vida" required name="CV"> <br>
+        <!-- ingresar password  -->
+        <label for=""> CONTRASEÑA </label>
+        <input type="password" placeholder="Ingrese aqui su contraseña" required name="CONTRASEÑA"> <br>
+        <!-- Hora de ingreso  -->
+        <label for="">HORA DE INGRESO</label>
+        <input type="time" placeholder="Cual fue su hora de ingreso" required name="HORA_DE_INGRESO"><br>
+        <!-- Mes de ingreso  -->
+        <label for=""> MES DE INGRESO </label>
+        <input type="month" placeholder=" Indique su mes de ingreso" required name="MES_DE_INGRESO"> <br>
+        <!-- ingresar color  -->
+        <label for="">COLOR</label>
+        <input type="color" placeholder="Seleccione su color favorito" required name="COLOR"> <br>
+        <!-- selección de campos  -->
+        <label for="">GENERO</label>
+        <input type="radio" name="GENERO" value="FEMENINO" required >
+        <label for="">FEMENINO </label>
+        <input type="radio" name="GENERO" value="MASCULINO" required>
+        <label for=""> MASCULINO </label> <br>
+        <!-- campo checkbox  -->
+        <label for="">DIAS LABORADOS</label>
+        <input type="checkbox" name="DIAS_LABORADOS" value="LUNES">
+        <label for=""> LUNES </label>
+        <input type="checkbox" name="DIAS_LABORADOS" value="MARTES" >
+        <label for=""> MARTES </label>
+        <input type="checkbox" name="DIAS_LABORADOS" value="MIERCOLES" >
+        <label for=""> MIERCOLES </label>
+        <input type="checkbox" name="DIAS_LABORADOS" value="JUEVES" >
+        <label for=""> JUEVES </label>
+        <input type="checkbox" name="DIAS_LABORADOS" value="VIERNES" >
+        <label for=""> VIERNES </label> <br>
+        <!-- campo para url  -->
+        <label for=""> LINK PERFIL DE LINKEDIN </label>
+        <input type="url" required name=" LINKEDIN"> <br>
+        <!-- numero de telefono  -->
+        <label for=""> TELEFONO </label>
+        <input type="tel" required  name="TELEFONO"> <br>
+        <!-- selector  -->
+        <label for=""> ESCOJA UNA CIUDAD </label>
+        <select name="CIUDAD" id="" required>
+            <option value="Choco">Choco</option>
+            <option value="Boyacá" >Boyacá</option>
+            <option value="Manizales">Manizales</option>
+            <option value="Ibague" >Ibagué</option>
+            <option value="Bogotá">Bogotá</option>
+        </select><br>
+        <!-- fieldset  -->
+        <fieldset>
+            <legend>INFORMACIÓN GENERAL</legend>
+        <!-- Text Area  -->
+            <label for=""> DESCRIPCIÓN DEL PERFIL</label>
+            <textarea name=" DESC_PERFIL" id="" cols="58" rows="8"> </textarea>  
+            <br>
+        <!-- Datalist  -->
+            <label for="">TIPO DOCUMENTO</label>
+            <input list="DOCUMENTO">
+            <datalist id="DOCUMENTO">
+                <option value="CEDULA DE CIUDADANIA"></option>
+                <option value="TARJETA DE IDENTIDAD"></option>
+                <option value="CEDULA EXTRANGERIA"></option>
+            </datalist> <br>
+            <label for="">CEDULA</label>
+            <input type="text" name="CEDULA">
+        </fieldset>
+            <br>
+        <!-- Button  -->
+        <button>Enviar</button>
+    </form>
+  </body>
+</html>

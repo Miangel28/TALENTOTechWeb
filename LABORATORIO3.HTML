@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+
+// Ejercicio 1: Verificar si un número es positivo, negativo o cero
+// Escribe un programa que solicite un número al usuario y luego imprima un mensaje indicando si el número es positivo, negativo o cero.*/
+
+// var Numero = parseInt(prompt("Ingrese un numero"))
+// if (Numero<0 ) { 
+//     document.write("El numero es negativo")
+// } else if (Numero == 0){
+//     document.write("El numero es cero ")
+// }else{
+//     document.write("El numero es positivo")
+// }
+
+// Ejercicio 2: Determinar si un número es par o impar
+// // Escribe un programa que solicite un número al usuario y luego imprima un mensaje indicando si el número es par o impar.
+//  var IngNum=parseInt(prompt("Ingrese el numero deseado"))
+//  var cociente=IngNum%2
+//  if ( cociente==0){
+//     document.write("El numero es par " )
+//  } else { 
+//     document.write("El numero es impar")
+//  }
+
+// Ejercicio 3: Validar la edad para votar
+// Escribe un programa que solicite la edad del usuario y luego imprima un mensaje indicando 
+// si la persona es mayor de edad (18 años o más) y puede votar*/
+
+// var Edad = parseInt(prompt("Ingrese la edad del votante"))
+// if (Edad >= 18){
+//     document.write("El ciudadano es mayor de edad y puede votar")
+// }else {
+//     document.write("El ciudadano no es mayor de edad y no puede votar")
+// }
+
+// Ejercicio 4: Determinar el mayor de dos números
+// // Escribe un programa que solicite dos números al usuario y luego imprima cuál de ellos es mayor o si son iguales.
+
+// var numero = parseInt(prompt("Ingrese el primero numero "))
+// var numero2= parseInt(prompt("Ingrese el segundo numero "))
+// if (numero < numero2 ){
+//     document.write( numero2 + "es mayor que" + numero)
+// } else if(numero == numero2){
+//     document.write(numero + "es igual que" +numero2)
+// }else {
+//     document.write( numero + "es mayor que " +numero2 )
+// }
+
+
+// Ejercicio 5: Calcular descuento en una compra
+// Escribe un programa que solicite el monto de una compra y luego aplique un descuento del 10% si el monto es mayor a $100.
+
+// var compra = parseInt(prompt(" Ingrese el valor de la compra "))
+// var descuento = compra / 10
+// var total = compra - descuento
+// if ( compra >100000){
+//     document.write("El valor total de la compra es :" + total)
+// } else {
+//     document.write("El valor total de la compra es :" + compra)
+// }
+
+// Ejercicio 6: Convertir un número a un día de la semana [Switch]
+// Escribe un programa que solicite un número del 1 al 7 y muestre el día correspondiente de la semana (1 = Lunes, 2 = Martes, etc.).
+
+// var DiaSemana=parseInt(prompt("Ingrese el numero del dia:"))
+// var NombreDia= ""
+// if(DiaSemana > 0 && DiaSemana <=7 ){
+//     switch(DiaSemana){
+//         case 1: 
+//         NombreDia= "Lunes"
+//         break;
+//         case 2: 
+//         NombreDia= "Martes"
+//         break;
+//         case 3: 
+//         NombreDia= "Miercoles"
+//         break;
+//         case 4: 
+//         NombreDia= "Jueves"
+//         break;
+//         case 5: 
+//         NombreDia= "Viernes"
+//         break;
+//         case 6: 
+//         NombreDia= "Sabado"
+//         break;
+//         case 7: 
+//         NombreDia= "Domingo"
+//         break;
+//     }
+//     document.write(" El Dia ingresado es:" +NombreDia)
+// } else{
+//     document.write(" El dia ingresado no es valido:")
+// }
+
+// Ejercicio 7: Determinar la estación del año según el mes [Swtich]
+// Escribe un programa que solicite un número de mes (1-12) 
+// y determine la estación del año (primavera, verano, otoño, invierno).
+
+var Mes= parseInt(prompt("Ingrese el numero del mes:"))
+    switch(Mes){
+        case 2: 
+        case 3:
+        case 4: 
+        case 5: 
+        case 6: 
+            document.write("Actualmente es Primavera <br>")
+            break;
+
+        case 7: 
+        case 8: 
+        case 9: 
+            document.write("Actualmente es verano <br> ")
+            break;
+        case 10: 
+        case 11: 
+        case 12: 
+        case 1: 
+            document.write("Actualmente es invierno <br>")
+            break;
+    }
+</script>
+</html>
