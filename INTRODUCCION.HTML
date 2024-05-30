@@ -17,7 +17,13 @@
 
     <!-- IMAGEN --> <H1>ESTO ES UNA IMAGEN</H1>
     <DIV> 
-        <img class="TalentoTech" src="https://talentotechbogota.co/images/logo_talento.svg" alt="">
+        <img class="TalentoTech" src="https://talentotechbogota.co/images/logo_talento.svg" alt="" id="logo">
+        <select onchange="CambiarTamanoLogo(value)">
+            <option value="Small">Pequeño</option>
+            <option value="Medium">Mediano</option>
+            <option value="Large">Grande</option>
+        </select>
+
     </DIV>
     <!-- IMAGEN --> <H1>MI NOMBRE ES</H1>
     <DIV> 
@@ -224,6 +230,22 @@
         if(Nombre && Fecha)
             alert("Los datos del formulario son: " + Nombre + " " + Fecha + " " +Salario+ " " +Correo+ " " +CV+ " " +Password+ " " +Ingreso+ " " + Mes)
         }
+
+    function CambiarTamanoLogo(Tamano){
+        var logo = document.getElementById("Logo")
+        var tamanoLogo= 0
+        if(Tamano == "Small"){
+            tamanoLogo = 300
+        } else if (Tamano == "Medium"){
+            tamanoLogo = 600
+        } else if (Tamano == "Large"){
+            tamanoLogo = 900
+        }
+            logo.style.width = tamanoLogo +'px'
+    
+    
+    }    
+
 </script>
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
