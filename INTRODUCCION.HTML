@@ -17,8 +17,8 @@
 
     <!-- IMAGEN --> <H1>ESTO ES UNA IMAGEN</H1>
     <DIV> 
-        <img class="TalentoTech" src="https://talentotechbogota.co/images/logo_talento.svg" alt="" id="logo">
-        <select onchange="CambiarTamanoLogo(value)">
+        <img class="TalentoTech" src="https://talentotechbogota.co/images/logo_talento.svg"  width="600" id="logo" >
+        <select onchange= "CambiarTamanoLogo(value)">
             <option value="Small">Pequeño</option>
             <option value="Medium">Mediano</option>
             <option value="Large">Grande</option>
@@ -106,34 +106,34 @@
                 <td> MEDELLIN </td>
                 <td> ALONSO@CORREO.COM</td>
             </tr>
-        </table>
+        </table
     </div>
     <br> <hr>
     <form method="post">
         <!-- nombre   -->
         <label for="">NOMBRE </label>
-        <input type="text" placeholder="Nombre"  required name="NOMBRE" id="Nombre"> <br>
+        <input type="text" placeholder="Nombre"  name="NOMBRE" id="Nombre"> <br>
         <!-- fecha  -->
         <label for=""> FECHA</label>
-        <input type="date" placeholder="Fecha" required name="FECHA" id="Fecha"><br>
+        <input type="date" placeholder="Fecha"  name="FECHA" id="Fecha"><br>
         <!-- numero  -->
         <label for="">SALARIO_MENSUAL </label>
-        <input type="number" placeholder="Salario Mensual" required name="SALARIO_MENSUAL" id="Salario"> <br>
+        <input type="number" placeholder="Salario Mensual" name="SALARIO_MENSUAL"> <br>
         <!-- correo  -->
         <label for="">CORREO </label>
-        <input type="email" placeholder="Ingrese su correo electronico" required name="CORREO" id="Correo"> <br>
+        <input type="email" placeholder="Ingrese su correo electronico" name="CORREO"> <br>
         <!-- Cargar un archivo  -->
         <label for=""> CARGUE SU HOJA DE VIDA </label>
-        <input type="file" placeholder=" Cargue aquí su Hoja de Vida" required name="CV" id="CV"> <br>
+        <input type="file" placeholder=" Cargue aquí su Hoja de Vida" name="CV"> <br>
         <!-- ingresar password  -->
         <label for=""> CONTRASEÑA </label>
-        <input type="password" placeholder="Ingrese aqui su contraseña" required name="CONTRASEÑA" id="Password"> <br>
+        <input type="password" placeholder="Ingrese aqui su contraseña" name="CONTRASEÑA"> <br>
         <!-- Hora de ingreso  -->
         <label for="">HORA DE INGRESO</label>
-        <input type="time" placeholder="Cual fue su hora de ingreso" required name="HORA_DE_INGRESO" id="ingreso"><br>
+        <input type="time" placeholder="Cual fue su hora de ingreso"  name="HORA_DE_INGRESO"><br>
         <!-- Mes de ingreso  -->
         <label for=""> MES DE INGRESO </label>
-        <input type="month" placeholder=" Indique su mes de ingreso" required name="MES_DE_INGRESO" id="Mes"> <br>
+        <input type="month" placeholder=" Indique su mes de ingreso" name="MES_DE_INGRESO"> <br>
         <!-- ingresar color  -->
         <label for="">COLOR</label>
         <input type="color" placeholder="Seleccione su color favorito"  > <br>
@@ -217,22 +217,17 @@
     }
 
     function enviarFormulario(){
-        var Nombre =document.getElementById("Nom").value
-        var Fecha = document.getElementById("Fecha").value
-        var Salario = document.getElementById("Salario").value
-        var Correo = document.getElementById("Correo").value
-        var CV = document.getElementById("CV").value
-        var Password = document.getElementById("Password").value
-        var Ingreso = document.getElementById("ingreso").value
-        var Mes = document.getElementById("Mes").value
+        var Nombre= document.getElementById("Nombre").value
+        var Fecha= document.getElementById("Fecha").value
+     
        
     
         if(Nombre && Fecha)
-            alert("Los datos del formulario son: " + Nombre + " " + Fecha + " " +Salario+ " " +Correo+ " " +CV+ " " +Password+ " " +Ingreso+ " " + Mes)
+            alert("Los datos del formulario son: " + Nombre + " " + Fecha )
         }
 
     function CambiarTamanoLogo(Tamano){
-        var logo = document.getElementById("Logo")
+        var logo = document.getElementById("logo")
         var tamanoLogo= 0
         if(Tamano == "Small"){
             tamanoLogo = 300
@@ -241,7 +236,7 @@
         } else if (Tamano == "Large"){
             tamanoLogo = 900
         }
-            logo.style.width = tamanoLogo +'px'
+            logo.style.width= tamanoLogo + 'px'
     
     
     }    

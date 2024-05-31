@@ -1,0 +1,63 @@
+[
+    {
+        "nombre": "Miguel",
+        "apellido": "Montaño",
+        "edad": "40",
+        "mascota": [
+            {
+                "nombre" : "Kathya",
+                "Tipo" : "Perro"
+            },
+            {
+                "nombre" : "Sony",
+                "Tipo" : "Conejo"
+            }
+        ]
+
+    },
+    {
+        "nombre": "Jaime",
+        "apellido" : "Riaño",
+        "edad" : "35",
+        "mascota":[
+            {
+                "nombre" : "MeryMoon",
+                "tipo" : "Gato"
+            }
+        ]
+    },
+    {
+        "nombre": "Julio",
+        "Apellido": "Tisoy",
+        "edad": "27",
+        "mascota": [
+            {
+                "nombre": "Sasha",
+                "tipo": "Gato"
+            }
+        ]
+    },
+    {
+        "nombre" : "Elizabeth",
+        "apellido" : "Flores",
+        "edad" : "26",
+        "mascota" : [
+            {
+                "nombre": "Frank",
+                "tipo" : "Rana"
+            }
+        ]
+    },
+    {
+        "nombre": "Luis",
+        "apellido": "Torres",
+        "edad": "40",
+        "mascota": [
+            {
+                "nombre": "Tony",
+                "tipo": "Raton"
+            }
+        ]
+
+    }
+]
