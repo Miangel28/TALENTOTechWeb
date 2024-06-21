@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../assets/loadNavbar.js"></script>
+    <div id="navbar"></div>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Correo</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody id="Usuarios">
+
+        </tbody>
+    </table>
+</body>
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+        
+        fetch("https://nodejs-5o9ysjegd-miguel-arias-projects-2c33a27d.vercel.app/usuario")
+        .then(response => response.json())
+        .then(data => { 
+
+            const tableBody = document.getElementById("Usuarios")
+            data.forEach(user => {
+                const row = document.createElement("tr")
+                const nombre = document.createElement("td")
+                nombre.textContent = user.nombre
+                row.appendChild(nombre)
+
+
+                const apellidos = document.createElement("td")
+                apellidos.textContent = user.apellidos
+                row.appendChild(apellidos)
+
+                const correo = document.createElement("td")
+                correo.textContent = user.correo
+                row.appendChild(correo)
+
+                
+                
+                const acciones = document.createElement("td")
+                const editar = document.createElement("a")
+                editar.textContent = "Editar"
+                editar.href = "./Create.html?id=" + user._id
+                editar.classList.add("btn", "btn-warning");
+
+                const eliminar = document.createElement("button")
+                eliminar.textContent = "Eliminar"
+                eliminar.classList.add("btn", "btn-danger");
+
+
+                eliminar.addEventListener("click", function(){
+                    const textConfirmacion = "¿Estas seguro que deseas eliminar" + user.nombre + "?"
+                    if(confirm(textoConfirmacion)){
+                        eliminarUsuario(user._id, row)
+                    }
+                })
+
+                acciones.appendChild(eliminar)
+                acciones.appendChild(editar)
+                row.appendChild(acciones)
+
+                tableBody.appendChild(row)
+
+            })
+
+        })
+    })
+    function eliminarUsuario(id, row){
+        // Esta es la url de eliminacion, por ejemplo
+        // http://localhost:3000/usuario/6668ed6bff9c23e033128545
+        const deleteUrl = 'https://nodejs-5o9ysjegd-miguel-arias-projects-2c33a27d.vercel.app/usuario/'+id
+        // Ejecuto la accion del API
+        fetch(deleteUrl, {
+            method: 'DELETE' // Defino el metodo a utilizar
+        })
+        .then(response => {
+            // Obtengo la respuesta del servidor
+            if(response.status == 200){ // Validando que sea exitosa
+                row.remove() // Elimino al usuario de la lista
+                alert('Usuario eliminado correctamente') // Muestro un mensaje de confirmacion      
+            }else{
+                alert('Error eliminando al usuario') // Muestro mensaje de error
+            }
+        })
+        .catch(error => console.log('Error: ', error))
+    }
+
+</script>
+</html>

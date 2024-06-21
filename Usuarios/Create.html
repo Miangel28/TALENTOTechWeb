@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../assets/loadNavbar.js"></script>
+    <div id="navbar"></div>
+</head>
+<body>
+    <form id="guardarUsuario" class="container">
+        <label for="Nombre">Nombre</label>
+        <input type=" text " placeholder="Nombre" id="nombre" required class="form-control"> <br>
+        <label for=" Apellidos ">Apellidos</label>
+        <input type="text" placeholder="Apellidos" id="apellidos" required class="form-control"> <br>
+        <label for="Correo">Correo</label>
+        <input type="email" placeholder="Correo" id="correo" required class="form-control"> <br>
+        <label for="Password">Password</label>
+        <input type="password" placeholder="Contraseña" id="password" class="form-control">
+        <hr>
+        <button type="submit" class="btn btn-primary col-12">ENVIAR</button>
+        
+    </form>
+</body>
+
+<script>
+        document.addEventListener("DOMContentLoaded", function(){
+        
+            const searchParams = new URLSearchParams(window.location.search)
+            const id = searchParams.get("id")
+            
+            
+            const form = document.getElementById("guardarUsuario")
+            
+
+            form.addEventListener("submit", function(event){
+                event.preventDefault();
+
+                const data = {
+                    nombre: document.getElementById("nombre").value,
+                    apellidos: document.getElementById("apellidos").value,
+                    correo: document.getElementById("correo").value,
+                    password: document.getElementById("password").value
+                }
+                console.log(data)
+                if(searchParams.has("id")){
+                submitForm(data, "https://nodejs-5o9ysjegd-miguel-arias-projects-2c33a27d.vercel.app/"+ id, "PUT")
+            }else{
+                submitForm(data, "https://nodejs-5o9ysjegd-miguel-arias-projects-2c33a27d.vercel.app", "POST")
+            }
+        })            
+            
+            if(searchParams.has("id")){
+
+                fetch("https://nodejs-5o9ysjegd-miguel-arias-projects-2c33a27d.vercel.app/"+id)
+                .then(response => response.json())
+                .then(data =>{ 
+                    document.getElementById("nombre").value = data.nombre
+                    document.getElementById("apellidos").value = data.apellidos
+                    document.getElementById("correo").value = data.correo  
+                })
+        }
+    })
+
+    function submitForm(data, url, method){
+    
+    fetch(url, {
+
+            method: method,
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(data)
+                })
+                .then(response =>{
+                    return response.json()
+                })
+                .then(data =>{
+                    if(data.status == "success"){
+                        alert("Usuario resgistrado correctamente ")
+                        window.location.href = "./List.html";
+                    }else{
+                        alert(data.message)
+                    }
+                })
+                .catch((error) => console.log("Error: ", error))
+    }
+</script>
+</html>
