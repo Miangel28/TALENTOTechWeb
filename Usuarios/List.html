@@ -25,7 +25,7 @@
 <script>
     document.addEventListener("DOMContentLoaded", function(){
         
-        fetch("https://nodejs-5o9ysjegd-miguel-arias-projects-2c33a27d.vercel.app/usuario")
+        fetch("https://nodejs-henna.vercel.app/usuario")
         .then(response => response.json())
         .then(data => { 
 
@@ -78,7 +78,7 @@
     function eliminarUsuario(id, row){
         // Esta es la url de eliminacion, por ejemplo
         // http://localhost:3000/usuario/6668ed6bff9c23e033128545
-        const deleteUrl = 'https://nodejs-5o9ysjegd-miguel-arias-projects-2c33a27d.vercel.app/usuario/'+id
+        const deleteUrl = 'https://nodejs-henna.vercel.app/usuario/'+id
         // Ejecuto la accion del API
         fetch(deleteUrl, {
             method: 'DELETE' // Defino el metodo a utilizar
